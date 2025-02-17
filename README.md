@@ -15,16 +15,17 @@ Each Go example is organised in a dedicated folder with:
 Below is a list of the concepts I have covered so far, with links to my implementations:
 
 - ✅ [Hello World](tutorial/1-hello-world.go/)
+- ✅ [Values](tutorial/2-values.go/)
+<!--
 
-<!-- 2. ✅ [Values](examples/02-values/)
-2. ✅ [Variables](examples/03-variables/)
-3. ✅ [Constants](examples/04-constants/)
-4. ✅ [For Loop](examples/05-for/)
-5. ✅ [If/Else](examples/06-if-else/)
-6. ✅ [Switch](examples/07-switch/)
-7. ✅ [Arrays](examples/08-arrays/)
-8. ✅ [Slices](examples/09-slices/)
-9. ✅ [Maps](examples/10-maps/) -->
+2. ✅ [Variables](tutorial/03-variables/)
+3. ✅ [Constants](tutorial/04-constants/)
+4. ✅ [For Loop](tutorial/05-for/)
+5. ✅ [If/Else](tutorial/06-if-else/)
+6. ✅ [Switch](tutorial/07-switch/)
+7. ✅ [Arrays](tutorial/08-arrays/)
+8. ✅ [Slices](tutorial/09-slices/)
+9. ✅ [Maps](tutorial/10-maps/) -->
 
 - 🔄 [More to Come]
 
