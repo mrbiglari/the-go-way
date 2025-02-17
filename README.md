@@ -16,6 +16,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 
 - ✅ [Hello World](tutorial/1-hello-world.go/)
 - ✅ [Values](tutorial/2-values.go/)
+- ✅ [Variables](tutorial/3-variables.go/)
 <!--
 
 2. ✅ [Variables](tutorial/03-variables/)
