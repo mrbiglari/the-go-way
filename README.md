@@ -4,11 +4,16 @@
 
 This repository serves as an **archive and audit trail** of my journey learning Go, following the examples provided on [Go by Example](https://gobyexample.com/). Each section contains code snippets, notes, and explanations to reinforce my understanding of Go’s features and best practices.
 
-## Structure
+## Project Structure 🌳
 
-Each Go example is organised in a dedicated folder with:
-
-- `README.md` – A brief summary of the concept covered
+```
+the-go-way/
+├── tutorial/                 # The directory hosting basic go examples
+│   ├── 1-hello-world.go
+│   │...
+│   ├── main.go               # The main func allowing debugging of each example
+├── README.md                 # A brief summary of the concept covered
+```
 
 ## Learning Progress 📈
 
