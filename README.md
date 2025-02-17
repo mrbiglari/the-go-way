@@ -10,23 +10,25 @@ Each Go example is organised in a dedicated folder with:
 
 - `README.md` – A brief summary of the concept covered
 
-<!-- ## Learning Progress 📈
+## Learning Progress 📈
 
 Below is a list of the concepts I have covered so far, with links to my implementations:
 
-1. ✅ [Hello World](examples/01-hello-world/)
-2. ✅ [Values](examples/02-values/)
-3. ✅ [Variables](examples/03-variables/)
-4. ✅ [Constants](examples/04-constants/)
-5. ✅ [For Loop](examples/05-for/)
-6. ✅ [If/Else](examples/06-if-else/)
-7. ✅ [Switch](examples/07-switch/)
-8. ✅ [Arrays](examples/08-arrays/)
-9. ✅ [Slices](examples/09-slices/)
-10. ✅ [Maps](examples/10-maps/)
-11. 🔄 [More to come...]
+- ✅ [Hello World](tutorial/1-hello-world.go/)
 
-_(The list will be updated as I progress.)_ -->
+<!-- 2. ✅ [Values](examples/02-values/)
+2. ✅ [Variables](examples/03-variables/)
+3. ✅ [Constants](examples/04-constants/)
+4. ✅ [For Loop](examples/05-for/)
+5. ✅ [If/Else](examples/06-if-else/)
+6. ✅ [Switch](examples/07-switch/)
+7. ✅ [Arrays](examples/08-arrays/)
+8. ✅ [Slices](examples/09-slices/)
+9. ✅ [Maps](examples/10-maps/) -->
+
+- 🔄 [More to Come]
+
+_(The list will be updated as I progress.)_
 
 ## Why This Repo? 🤔
 
