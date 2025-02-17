@@ -23,17 +23,6 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [Values](tutorial/2-values.go/)
 - ✅ [Variables](tutorial/3-variables.go/)
 - ✅ [Constants](tutorial/4-constants.go/)
-<!--
-
-2. ✅ [Variables](tutorial/03-variables/)
-3. ✅ [Constants](tutorial/04-constants/)
-4. ✅ [For Loop](tutorial/05-for/)
-5. ✅ [If/Else](tutorial/06-if-else/)
-6. ✅ [Switch](tutorial/07-switch/)
-7. ✅ [Arrays](tutorial/08-arrays/)
-8. ✅ [Slices](tutorial/09-slices/)
-9. ✅ [Maps](tutorial/10-maps/) -->
-
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
