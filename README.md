@@ -25,6 +25,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [Constants](tutorial/4-constants.go/)
 - ✅ [for](tutorial/5-for.go/)
 - ✅ [if/else](tutorial/6-if-else.go/)
+- ✅ [switch](tutorial/7-switch.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
