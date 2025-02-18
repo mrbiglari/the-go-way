@@ -23,6 +23,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [Values](tutorial/2-values.go/)
 - ✅ [Variables](tutorial/3-variables.go/)
 - ✅ [Constants](tutorial/4-constants.go/)
+- ✅ [for](tutorial/5-for.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
