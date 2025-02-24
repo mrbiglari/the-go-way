@@ -29,6 +29,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [arrays](tutorial/8-arrays.go/)
 - ✅ [slices](tutorial/9-slices.go/)
 - ✅ [maps](tutorial/10-maps.go/)
+- ✅ [functions](tutorial/11-functions.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
