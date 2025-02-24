@@ -34,6 +34,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [functions: variadic functions](tutorial/13-variadic-functions.go/)
 - ✅ [functions: closures](tutorial/14-closures.go/)
 - ✅ [functions: recursion](tutorial/15-recursion.go/)
+- ✅ [range over built-in types](tutorial/16-range-over-built-in-types.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
