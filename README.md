@@ -31,6 +31,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [maps](tutorial/10-maps.go/)
 - ✅ [functions](tutorial/11-functions.go/)
 - ✅ [functions: multiple return values](tutorial/12-multiple-return-values.go/)
+- ✅ [functions: variadic functions](tutorial/13-variadic-functions.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
