@@ -32,6 +32,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [functions](tutorial/11-functions.go/)
 - ✅ [functions: multiple return values](tutorial/12-multiple-return-values.go/)
 - ✅ [functions: variadic functions](tutorial/13-variadic-functions.go/)
+- ✅ [functions: closures](tutorial/14-closures.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
