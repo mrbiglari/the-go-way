@@ -36,6 +36,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [functions: recursion](tutorial/15-recursion.go/)
 - ✅ [range over built-in types](tutorial/16-range-over-built-in-types.go/)
 - ✅ [pointers](tutorial/17-pointers.go/)
+- ✅ [strings & runes](tutorial/18-strings-and-runes.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
