@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+    "maps"
+)
 
-func maps() {
+func _maps() {
 	var bob = "Bob"
 	var sydney = "Sydney"
 
@@ -26,5 +29,11 @@ func maps() {
 	clear(scores)
 	if len(scores) == 0 {
 		fmt.Printf("The map has been cleared.\n")
+	}
+
+	var aliases = map[string]string{"apollo13": "bob", "artemis": "sydney"}
+	var aliasesDuplicated = map[string]string{"apollo13": "bob", "artemis": "sydney"}
+	if maps.Equal(aliases, aliasesDuplicated){
+		fmt.Printf("The following two maps are equal: %v, %v", aliases, aliasesDuplicated)
 	}
 }
