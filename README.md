@@ -28,6 +28,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [switch](tutorial/7-switch.go/)
 - ✅ [arrays](tutorial/8-arrays.go/)
 - ✅ [slices](tutorial/9-slices.go/)
+- ✅ [maps](tutorial/10-maps.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
