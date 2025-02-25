@@ -30,12 +30,16 @@ func _for() {
 		fmt.Println(t)
 	}
 
-	iterables := []string{"a", "b", "c", "d", "e"}
-	for index := range iterables {
-		fmt.Println(iterables[index])
+	iterable := []string{"a", "b", "c", "d", "e"}
+	for index := range iterable {
+		fmt.Println(iterable[index])
 	}
 
-	for index, value := range iterables {
+	for index, value := range iterable {
 		fmt.Println(index, value)
+	}
+
+	for _, value := range iterable {
+		fmt.Println(value)
 	}
 }
