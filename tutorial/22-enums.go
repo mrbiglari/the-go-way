@@ -44,6 +44,6 @@ func transition(state ServerState) ServerState {
 	case Error:
 		return Error
 	default:
-		panic(fmt.Errorf("unknown state: %s", s))
+		panic(fmt.Errorf("unknown state: %s", state))
 	}
 }
