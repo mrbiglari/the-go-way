@@ -27,12 +27,12 @@ When to Use Which?
 
 ✔ Use a pointer (*person) when:
     ● The struct is large, and you want to avoid copying it.
-    ● You need to modify the original struct after returning it — stateful objects.
+    ● You need to modify the original struct after returning it — stateful struct instances.
     ● You want to share the same instance across multiple functions.
 
 ✔ Use a value (person) when:
     ● The struct is small, and copying it is cheap.
-    ● You do not need to modify the original after returning — stateless objects.
+    ● You do not need to modify the original after returning — stateless struct instances.
     ● You want immutable data (every function gets a copy).
 */
 
