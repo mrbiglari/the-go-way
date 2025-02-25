@@ -40,6 +40,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [structs](tutorial/19-structs.go/)
 - ✅ [methods](tutorial/20-methods.go/)
 - ✅ [interfaces](tutorial/21-interfaces.go/)
+- ✅ [enums](tutorial/22-enums.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
