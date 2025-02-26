@@ -43,6 +43,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [enums](tutorial/22-enums.go/)
 - ✅ [types](tutorial/23-types.go/)
 - ✅ [reflection](tutorial/24-reflection.go/)
+- ✅ [embedding](tutorial/25-embedding.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
