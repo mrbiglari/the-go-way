@@ -44,6 +44,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [types](tutorial/23-types.go/)
 - ✅ [reflection](tutorial/24-reflection.go/)
 - ✅ [embedding](tutorial/25-embedding.go/)
+- ✅ [generics](tutorial/26-generics.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
