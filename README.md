@@ -48,6 +48,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [range over iterators](tutorial/27-range-over-iterators.go/)
 - ✅ [errors](tutorial/28-errors.go/)
 - ✅ [custom errors](tutorial/29-custom-errors.go/)
+- ✅ [go routines](tutorial/30-go-routines.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
