@@ -46,6 +46,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [embedding](tutorial/25-embedding.go/)
 - ✅ [generics](tutorial/26-generics.go/)
 - ✅ [range over iterators](tutorial/27-range-over-iterators.go/)
+- ✅ [errors](tutorial/28-errors.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
