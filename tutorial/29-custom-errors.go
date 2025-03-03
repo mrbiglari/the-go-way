@@ -10,7 +10,7 @@ type customError struct {
 	message  string
 }
 
-func (pointer *customError) Error() string { // A custom error type can be created by implementing the Error() method on them.
+func (pointer *customError) Error() string { // error is an interface, therefore a custom error type can be created by implementing the Error() method on a struct.
 	return fmt.Sprintf("%d - %s", pointer.argument, pointer.message)
 }
 
