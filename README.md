@@ -52,6 +52,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [channels](tutorial/31-channels.go/)
 - ✅ [channel buffering](tutorial/32-channel-buffering.go/)
 - ✅ [channel synchronisation](tutorial/33-channel-synchronization.go/)
+- ✅ [channel directions](tutorial/34-channel-directions.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
