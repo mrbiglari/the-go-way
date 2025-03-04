@@ -51,6 +51,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [go routines](tutorial/30-go-routines.go/)
 - ✅ [channels](tutorial/31-channels.go/)
 - ✅ [channel buffering](tutorial/32-channel-buffering.go/)
+- ✅ [channel synchronisation](tutorial/33-channel-synchronization.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
