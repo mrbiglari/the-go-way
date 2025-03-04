@@ -50,6 +50,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [custom errors](tutorial/29-custom-errors.go/)
 - ✅ [go routines](tutorial/30-go-routines.go/)
 - ✅ [channels](tutorial/31-channels.go/)
+- ✅ [channel buffering](tutorial/32-channel-buffering.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
