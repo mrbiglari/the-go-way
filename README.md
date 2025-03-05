@@ -54,6 +54,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [channel synchronisation](tutorial/33-channel-synchronization.go/)
 - ✅ [channel directions](tutorial/34-channel-directions.go/)
 - ✅ [select](tutorial/35-select.go/)
+- ✅ [timeouts](tutorial/36-timeouts.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
