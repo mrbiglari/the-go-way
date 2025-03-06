@@ -56,6 +56,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [select](tutorial/35-select.go/)
 - ✅ [timeouts](tutorial/36-timeouts.go/)
 - ✅ [non-blocking channel operations](tutorial/37-non-blocking-channel-operations.go/)
+- ✅ [closing channels](tutorial/38-closing-channels.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
