@@ -59,6 +59,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [closing channels](tutorial/38-closing-channels.go/)
 - ✅ [range over channels](tutorial/39-range-over-channels.go/)
 - ✅ [timers](tutorial/40-timers.go/)
+- ✅ [tickers](tutorial/41-tickers.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
