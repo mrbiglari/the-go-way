@@ -65,6 +65,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [rate limiting](tutorial/44-rate-limiting.go/)
 - ✅ [atomic counters](tutorial/45-atomic-counters.go/)
 - ✅ [mutexes](tutorial/46-mutexes.go/)
+- ✅ [sorting](tutorial/48-sorting.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
