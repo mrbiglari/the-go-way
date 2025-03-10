@@ -64,6 +64,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [wait groups](tutorial/43-wait-groups.go/)
 - ✅ [rate limiting](tutorial/44-rate-limiting.go/)
 - ✅ [atomic counters](tutorial/45-atomic-counters.go/)
+- ✅ [mutexes](tutorial/46-mutexes.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
