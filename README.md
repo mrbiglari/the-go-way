@@ -61,6 +61,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [timers](tutorial/40-timers.go/)
 - ✅ [tickers](tutorial/41-tickers.go/)
 - ✅ [worker pools](tutorial/42-worker-pools.go/)
+- ✅ [wait groups](tutorial/43-wait-groups.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
