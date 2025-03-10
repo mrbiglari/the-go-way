@@ -69,6 +69,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [sorting by functions](tutorial/49-sorting-by-functions.go/)
 - ✅ [panic](tutorial/50-panic.go/)
 - ✅ [defer](tutorial/51-defer.go/)
+- ✅ [recover](tutorial/52-recover.go/)
 - 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
