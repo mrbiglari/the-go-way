@@ -65,7 +65,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 - ✅ [rate limiting](tutorial/44-rate-limiting.go/)
 - ✅ [atomic counters](tutorial/45-atomic-counters.go/)
 - ✅ [mutexes](tutorial/46-mutexes.go/)
-- ✅ [stateful goroutines ⌛](tutorial/47-stateful-goroutines.go/)
+- ✅ [stateful goroutines](tutorial/47-stateful-goroutines.go/)⌛
 - ✅ [sorting](tutorial/48-sorting.go/)
 - ✅ [sorting by functions](tutorial/49-sorting-by-functions.go/)
 - ✅ [panic](tutorial/50-panic.go/)
