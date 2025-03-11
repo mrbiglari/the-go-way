@@ -72,6 +72,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [defer](tutorial/51-defer.go/)
 1. ✅ [recover](tutorial/52-recover.go/)
 1. ✅ [string functions](tutorial/53-string-functions.go/)
+1. ✅ [string formatting](tutorial/54-string-formatting.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
