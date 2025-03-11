@@ -25,7 +25,7 @@ func makeTea(argument int) error {
 }
 
 func _errors() {
-	var numbers = []int{13, 69}
+	numbers := []int{13, 69}
 	for _, number := range numbers {
 		if value, _error := decrement(number); _error != nil {
 			fmt.Printf("Failed to decrement value of %d.\n", number)
@@ -35,7 +35,7 @@ func _errors() {
 	}
 
 	for i := range 6 {
-		var _error = makeTea(i)
+		_error := makeTea(i)
 		if _error != nil {
 			if errors.Is(_error, errOutOfTea) {
 				fmt.Printf("%v, we should buy new tea!\n", _error)

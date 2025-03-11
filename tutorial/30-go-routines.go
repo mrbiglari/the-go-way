@@ -16,7 +16,7 @@ func goRoutines() {
 
 	go count()
 
-	var interject = func() {
+	interject := func() {
 		fmt.Println("No! I interject!")
 	}
 	go interject()

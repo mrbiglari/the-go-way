@@ -13,7 +13,7 @@ func someLogic(done chan bool) {
 }
 
 func channelSynchronization() {
-	var done = make(chan bool)
+	done := make(chan bool)
 	go someLogic(done)
 
 	<-done

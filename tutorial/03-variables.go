@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func variables() {
-	var a = "initial"
+	a := "initial"
 	fmt.Println(a)
 
-	var b, c = 1, 2
+	b, c := 1, 2
 	fmt.Println(b, c)
 
 	var d int = 4
@@ -15,7 +15,7 @@ func variables() {
 	var e, f int = 5, 6
 	fmt.Println(e, f)
 
-	var g = true
+	g := true
 	fmt.Println(g)
 
 	var h bool

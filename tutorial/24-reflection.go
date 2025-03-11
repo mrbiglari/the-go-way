@@ -41,9 +41,9 @@ type candy struct {
 }
 
 func structValueFields() {
-	var candy = candy{brand: "Mars"}
-	var structType = reflect.TypeOf(candy)
-	var structValue = reflect.ValueOf(candy)
+	candy := candy{brand: "Mars"}
+	structType := reflect.TypeOf(candy)
+	structValue := reflect.ValueOf(candy)
 	for i := 0; i < structType.NumField(); i++ {
 		field := structType.Field(i)
 		value := structValue.Field(i)
@@ -52,9 +52,9 @@ func structValueFields() {
 }
 
 func structPointerFields() {
-	var candy = &candy{brand: "Bounty"}
-	var structType = reflect.TypeOf(candy).Elem()
-	var structValue = reflect.ValueOf(candy).Elem()
+	candy := &candy{brand: "Bounty"}
+	structType := reflect.TypeOf(candy).Elem()
+	structValue := reflect.ValueOf(candy).Elem()
 	for i := 0; i < structType.NumField(); i++ {
 		field := structType.Field(i)
 		value := structValue.Field(i)
@@ -71,14 +71,14 @@ func (pointer *bird) Fly() { // pointer receiver method
 }
 
 func getStructValueMethods() {
-	var value = reflect.TypeOf(bird{}) // struct as a value
+	value := reflect.TypeOf(bird{}) // struct as a value
 	for i := 0; i < value.NumMethod(); i++ {
 		fmt.Println(value.Method(i).Name) // getting methods from a value instance: Sing
 	}
 }
 
 func getStructPointerMethods() {
-	var pointer = reflect.TypeOf(&bird{}) // struct as a pointer
+	pointer := reflect.TypeOf(&bird{}) // struct as a pointer
 	for i := 0; i < pointer.NumMethod(); i++ {
 		fmt.Println(pointer.Method(i).Name) // getting methods from a pointer instance: Sing & Fly
 	}
@@ -98,16 +98,16 @@ func newPayment(id string, amount int) *payment {
 }
 
 func structValueConstructors() {
-	var constructor = reflect.ValueOf(makePayment)                            // get function by reflection
-	var args = []reflect.Value{reflect.ValueOf("12345"), reflect.ValueOf(30)} // call the function with arguments
-	var payment = constructor.Call(args)[0].Interface().(payment)
+	constructor := reflect.ValueOf(makePayment)                            // get function by reflection
+	args := []reflect.Value{reflect.ValueOf("12345"), reflect.ValueOf(30)} // call the function with arguments
+	payment := constructor.Call(args)[0].Interface().(payment)
 	fmt.Println(payment)
 }
 
 func structPointerConstructors() {
-	var constructor = reflect.ValueOf(newPayment)                             // get function by reflection
-	var args = []reflect.Value{reflect.ValueOf("12345"), reflect.ValueOf(30)} // call the function with arguments
-	var payment = constructor.Call(args)[0].Interface().(*payment)
+	constructor := reflect.ValueOf(newPayment)                             // get function by reflection
+	args := []reflect.Value{reflect.ValueOf("12345"), reflect.ValueOf(30)} // call the function with arguments
+	payment := constructor.Call(args)[0].Interface().(*payment)
 	fmt.Println(payment)
 }
 
@@ -116,7 +116,7 @@ type squirrel struct {
 }
 
 func newSquirrel() *squirrel {
-	var squirrel = squirrel{}
+	squirrel := squirrel{}
 	squirrel.hunger = 20
 	return &squirrel
 }
@@ -132,18 +132,18 @@ func (value squirrel) Munch(amount nuts) { // value receiver method (works on co
 }
 
 func structValueMethodsInvoke() {
-	var squirrel = newSquirrel()
+	squirrel := newSquirrel()
 	fmt.Println("Starting Hunger Levels:", squirrel.hunger) // 20
 
-	var valueType = reflect.TypeOf(*squirrel) // get type of `squirrel` (not `*squirrel`)
+	valueType := reflect.TypeOf(*squirrel) // get type of `squirrel` (not `*squirrel`)
 
-	var method, exists = valueType.MethodByName("Munch")
+	method, exists := valueType.MethodByName("Munch")
 	if !exists {
 		fmt.Println("Method not found!")
 		return
 	}
 
-	var args = []reflect.Value{reflect.ValueOf(*squirrel), reflect.ValueOf(5)} // first argument must be a value (not a pointer)
+	args := []reflect.Value{reflect.ValueOf(*squirrel), reflect.ValueOf(5)} // first argument must be a value (not a pointer)
 
 	method.Func.Call(args) // call the method dynamically
 
@@ -151,19 +151,19 @@ func structValueMethodsInvoke() {
 }
 
 func structPointerMethodsInvoke() {
-	var squirrel = newSquirrel()
+	squirrel := newSquirrel()
 	fmt.Println("Starting Hunger Levels:", squirrel.hunger) // 20
 
-	var pointerType = reflect.TypeOf(squirrel)
+	pointerType := reflect.TypeOf(squirrel)
 
-	var method, exists = pointerType.MethodByName("Eat")
+	method, exists := pointerType.MethodByName("Eat")
 
 	if !exists {
 		fmt.Println("No method called 'Eat' found on the type 'squirrel'.")
 		return
 	}
 
-	var args = []reflect.Value{reflect.ValueOf(squirrel), reflect.ValueOf(5)} // first argument must be the receiver (squirrel)
+	args := []reflect.Value{reflect.ValueOf(squirrel), reflect.ValueOf(5)} // first argument must be the receiver (squirrel)
 
 	method.Func.Call(args)                               // call the method dynamically
 	fmt.Println("Final Hunger Levels:", squirrel.hunger) // 15

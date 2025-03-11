@@ -2,21 +2,21 @@ package main
 
 import (
 	"fmt"
-    "maps"
+	"maps"
 )
 
 func _maps() {
-	var bob = "Bob"
-	var sydney = "Sydney"
+	bob := "Bob"
+	sydney := "Sydney"
 
-	var scores = make(map[string]float32)
+	scores := make(map[string]float32)
 	scores[bob] = 6.9
 	scores[sydney] = 4.2
 
 	fmt.Printf("%s got a score of %.1f in the test.\n", bob, scores[bob])
 	fmt.Printf("%s got a score of %.1f in the test.\n", sydney, scores[sydney])
 
-	var _, hasKey = scores[bob]
+	_, hasKey := scores[bob]
 	if hasKey {
 		fmt.Printf("The map has a score for bob.\n")
 	}
@@ -31,9 +31,9 @@ func _maps() {
 		fmt.Printf("The map has been cleared.\n")
 	}
 
-	var aliases = map[string]string{"apollo13": "bob", "artemis": "sydney"}
-	var aliasesDuplicated = map[string]string{"apollo13": "bob", "artemis": "sydney"}
-	if maps.Equal(aliases, aliasesDuplicated){
+	aliases := map[string]string{"apollo13": "bob", "artemis": "sydney"}
+	aliasesDuplicated := map[string]string{"apollo13": "bob", "artemis": "sydney"}
+	if maps.Equal(aliases, aliasesDuplicated) {
 		fmt.Printf("The following two maps are equal: %v, %v", aliases, aliasesDuplicated)
 	}
 }

@@ -6,7 +6,7 @@ import (
 )
 
 func _switch() {
-	var i = 2
+	i := 2
 	switch i {
 	case 1:
 		fmt.Println("i is one")
@@ -18,7 +18,7 @@ func _switch() {
 		fmt.Println("i is either two or three")
 	}
 
-	var day = "Saturday"
+	day := "Saturday"
 	switch day {
 	case "Saturday", "Sunday": // acts like (day == "Saturday" || day == "Sunday")
 		fmt.Println("It's the weekend!")
@@ -33,7 +33,7 @@ func _switch() {
 		fmt.Println("It's a weekday.")
 	}
 
-	var time = time.Now()
+	time := time.Now()
 	switch { // switch without an expression behaves as switch true, allowing logical expressions.
 	case time.Hour() < 12 || time.Hour() == 12: // cases can have conditional expressions like if statements
 		fmt.Println("It's before noon or noon.")

@@ -67,12 +67,12 @@ When to Use Which?
 */
 
 func interfaces() {
-	var shapes = []shape{square{side: 10}, circle{radius: 3.0}}
+	shapes := []shape{square{side: 10}, circle{radius: 3.0}}
 	for _, shape := range shapes {
 		measure(shape)
 	}
 
-	var animals = []animal{cat{}, &dog{}} // cat struct as value, dog struct as pointer
+	animals := []animal{cat{}, &dog{}} // cat struct as value, dog struct as pointer
 	for _, animal := range animals {
 		animal.makeSound()
 	}

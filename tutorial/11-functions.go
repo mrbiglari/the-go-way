@@ -11,10 +11,10 @@ func plusPlus(a, b, c int) int {
 }
 
 func functions() {
-	var noApples = 8
-	var noOranges = 7
+	noApples := 8
+	noOranges := 7
 	fmt.Printf("There are a total of %d Apples and Oranges.\n", plus(noApples, noOranges))
 
-	var noPears = 5
+	noPears := 5
 	fmt.Printf("There are a total of %d fruits.\n", plusPlus(noApples, noOranges, noPears))
 }

@@ -10,14 +10,14 @@ type person struct {
 
 // Constructor returning a pointer
 func newPerson(name string) *person { // returns a pointer
-	var person = person{name: name}
+	person := person{name: name}
 	person.age = 42
 	return &person // return address of
 }
 
 // Constructor returning a value
 func makePerson(name string) person { // returns a value
-	var person = person{name: name}
+	person := person{name: name}
 	person.age = 42
 	return person // return value
 }
@@ -37,23 +37,23 @@ When to Use Which?
 */
 
 func structs() {
-	var bob = person{name: "Bob"}
+	bob := person{name: "Bob"}
 	fmt.Println(bob)
 
-	var sydney = person{name: "Sydney", age: 45}
+	sydney := person{name: "Sydney", age: 45}
 	fmt.Println(sydney)
 	fmt.Printf("%s is %d years old.", sydney.name, sydney.age)
 
-	var trevor = &person{name: "Trevor", age: 22}
+	trevor := &person{name: "Trevor", age: 22}
 	fmt.Println(trevor)
 
-	var amanda = newPerson("Amanda")
+	amanda := newPerson("Amanda")
 	fmt.Println(amanda)
 
-	var buddy = makePerson("Buddy")
+	buddy := makePerson("Buddy")
 	fmt.Println(buddy)
 
-	var dog = struct {
+	dog := struct {
 		name   string
 		isGood bool
 	}{
