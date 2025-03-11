@@ -7,22 +7,22 @@ type rectangle struct {
 }
 
 // method with a pointer receiver
-func (p *rectangle) area() int {
-	return p.width * p.height
+func (self *rectangle) area() int {
+	return self.width * self.height
 }
 
 // method with a value receiver
-func (v rectangle) perimeter() int {
-	return 2*v.width + 2*v.height
+func (self rectangle) perimeter() int {
+	return 2*self.width + 2*self.height
 }
 
-func (p *rectangle) updatePointerState(width, height int) {
-	p.width = width // updates internal state
-	p.height = height
+func (self *rectangle) updatePointerState(width, height int) {
+	self.width = width // updates internal state
+	self.height = height
 }
-func (v rectangle) updateValueState(width, height int) {
-	v.width = width // updates local copy
-	v.height = height
+func (self rectangle) updateValueState(width, height int) {
+	self.width = width // updates local copy
+	self.height = height
 }
 
 func methods() {

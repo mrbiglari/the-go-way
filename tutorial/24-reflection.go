@@ -64,10 +64,10 @@ func structPointerFields() {
 
 type bird struct{}
 
-func (value bird) Sing() { // value receiver method
+func (self bird) Sing() { // value receiver method
 }
 
-func (pointer *bird) Fly() { // pointer receiver method
+func (self *bird) Fly() { // pointer receiver method
 }
 
 func getStructValueMethods() {
@@ -123,12 +123,12 @@ func newSquirrel() *squirrel {
 
 type nuts = int
 
-func (pointer *squirrel) Eat(amount nuts) { // MethodByName Only Works on Exported Methods, Methods must start with an uppercase letter to be accessible via reflection.
-	pointer.hunger -= amount
+func (self *squirrel) Eat(amount nuts) { // MethodByName Only Works on Exported Methods, Methods must start with an uppercase letter to be accessible via reflection.
+	self.hunger -= amount
 }
 
-func (value squirrel) Munch(amount nuts) { // value receiver method (works on copies)
-	value.hunger -= amount
+func (self squirrel) Munch(amount nuts) { // value receiver method (works on copies)
+	self.hunger -= amount
 }
 
 func structValueMethodsInvoke() {
