@@ -6,8 +6,8 @@ type base struct {
 	number int
 }
 
-func (value base) describe() string {
-	return fmt.Sprintf("base with num:%v", value.number)
+func (self base) describe() string {
+	return fmt.Sprintf("base with num:%v", self.number)
 }
 
 type container struct {

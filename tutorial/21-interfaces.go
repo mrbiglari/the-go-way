@@ -16,11 +16,11 @@ type square struct {
 	side float64
 }
 
-func (v square) area() float64 {
-	return v.side * v.side
+func (self square) area() float64 {
+	return self.side * self.side
 }
-func (v square) perimeter() float64 {
-	return 4 * v.side
+func (self square) perimeter() float64 {
+	return 4 * self.side
 }
 
 // circle
@@ -28,11 +28,11 @@ type circle struct {
 	radius float64
 }
 
-func (v circle) area() float64 {
-	return math.Pi * v.radius * v.radius
+func (self circle) area() float64 {
+	return math.Pi * self.radius * self.radius
 }
-func (v circle) perimeter() float64 {
-	return 2 * math.Pi * v.radius
+func (self circle) perimeter() float64 {
+	return 2 * math.Pi * self.radius
 }
 
 // interface example 2
@@ -42,13 +42,13 @@ type animal interface {
 
 type cat struct{}
 
-func (p cat) makeSound() { // if a method has a value receiver (T), both a value (T) and a pointer (&T) implement the interface.
+func (self cat) makeSound() { // if a method has a value receiver (T), both a value (T) and a pointer (&T) implement the interface.
 	fmt.Println("Meow!")
 }
 
 type dog struct{}
 
-func (p *dog) makeSound() { // if a method has a pointer receiver (*T), only a pointer (&T) implements the interface.
+func (self *dog) makeSound() { // if a method has a pointer receiver (*T), only a pointer (&T) implements the interface.
 	fmt.Println("Woof Woof!")
 }
 

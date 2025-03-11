@@ -14,9 +14,9 @@ type Chain[T any] struct {
 	next  *Chain[T]
 }
 
-func (pointer *ChainList[T]) enumerate() iter.Seq[T] {
+func (self *ChainList[T]) enumerate() iter.Seq[T] {
 	return func(yield func(T) bool) {
-		for i := pointer.head; i != nil; i = i.next {
+		for i := self.head; i != nil; i = i.next {
 			if !yield(i.value) {
 				return
 			}

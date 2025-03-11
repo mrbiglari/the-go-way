@@ -16,8 +16,8 @@ var stateToTextMapping = map[ServerState]string{
 	Error:     "error",
 }
 
-func (v ServerState) String() string {
-	return stateToTextMapping[v]
+func (self ServerState) String() string {
+	return stateToTextMapping[self]
 }
 
 func enums() {

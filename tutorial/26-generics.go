@@ -19,19 +19,19 @@ type Node[T any] struct {
 	next  *Node[T]
 }
 
-func (pointer *LinkedList[T]) Push(value T) {
-	if pointer.tail == nil {
-		pointer.head = &Node[T]{value: value}
-		pointer.tail = pointer.head
+func (self *LinkedList[T]) Push(value T) {
+	if self.tail == nil {
+		self.head = &Node[T]{value: value}
+		self.tail = self.head
 	} else {
-		pointer.tail.next = &Node[T]{value: value}
-		pointer.tail = pointer.tail.next
+		self.tail.next = &Node[T]{value: value}
+		self.tail = self.tail.next
 	}
 }
 
-func (pointer *LinkedList[T]) GetAll() []T {
+func (self *LinkedList[T]) GetAll() []T {
 	var nodes []T
-	for node := pointer.head; node != nil; node = node.next {
+	for node := self.head; node != nil; node = node.next {
 		nodes = append(nodes, node.value)
 	}
 	return nodes
@@ -54,12 +54,12 @@ type item struct {
 	name string
 }
 
-func (value item) string() string {
-	return "item: " + value.name
+func (self item) string() string {
+	return "item: " + self.name
 }
 
-func (value item) log() {
-	fmt.Println("Logging:", value.string())
+func (self item) log() {
+	fmt.Println("Logging:", self.string())
 }
 
 func printAndLog[T loggable](item T) { // functionally no different than func printAndLog(item loggable) {...} // using a generic function (T Loggable) makes sense only if you need to: (1) know the exact (concrete) type of item at compile time and (2) if you need to return T or use it in a way that depends on its concrete type.
