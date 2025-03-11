@@ -26,7 +26,7 @@ func (pointer *ChainList[T]) enumerate() iter.Seq[T] {
 
 func fibonacciSequence() iter.Seq[int] {
 	return func(yield func(int) bool) {
-		var a, b = 1, 1
+		a, b := 1, 1
 		for {
 			if !yield(a) { // yield is an internal `iter` function that determines if the iteration should continue, true: continues and false: terminates.
 				return
@@ -37,7 +37,7 @@ func fibonacciSequence() iter.Seq[int] {
 }
 
 func iterators() {
-	var list = &ChainList[int]{head: &Chain[int]{value: 1, next: &Chain[int]{value: 2, next: &Chain[int]{value: 3}}}}
+	list := &ChainList[int]{head: &Chain[int]{value: 1, next: &Chain[int]{value: 2, next: &Chain[int]{value: 3}}}}
 
 	for element := range list.enumerate() {
 		fmt.Println(element)

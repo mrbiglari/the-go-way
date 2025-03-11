@@ -20,7 +20,7 @@ type describer interface {
 }
 
 func embedding() {
-	var container = container{base: base{number: 20}, text: "Bob"}
+	container := container{base: base{number: 20}, text: "Bob"}
 	fmt.Println(container.base.number, container.number, container.text)
 	fmt.Println("describe:", container.describe())
 

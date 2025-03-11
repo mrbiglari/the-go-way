@@ -8,7 +8,7 @@ func rangeOverBuiltInTypes() {
 		fmt.Printf("number[%d]:%d\n", index, number)
 	}
 
-	var aliases = map[string]string{"apollo13": "bob", "artemis": "sydney"}
+	aliases := map[string]string{"apollo13": "bob", "artemis": "sydney"}
 	for key, value := range aliases {
 		fmt.Printf("%s -> %s\n", key, value)
 	}

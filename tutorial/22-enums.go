@@ -21,13 +21,13 @@ func (v ServerState) String() string {
 }
 
 func enums() {
-	var serverState = Idle
+	serverState := Idle
 
 	if serverState == Idle {
 		print(serverState)
 	}
 
-	var nextState = transition(serverState)
+	nextState := transition(serverState)
 	print(nextState)
 }
 

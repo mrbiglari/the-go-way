@@ -71,12 +71,12 @@ func generics() {
 	fmt.Println(add(3, 5))
 	fmt.Println(add(3.4, 5.6))
 
-	var linkedList = &LinkedList[int]{}
+	linkedList := &LinkedList[int]{}
 	linkedList.Push(5)
 	linkedList.Push(6)
 	linkedList.Push(7)
 	fmt.Println(linkedList.GetAll())
 
-	var dice = item{name: "dice"}
+	dice := item{name: "dice"}
 	printAndLog(dice)
 }

@@ -7,6 +7,6 @@ func getThree() (int, string) {
 }
 
 func multipleReturnValues() {
-	var threeInt, threeString = getThree()
+	threeInt, threeString := getThree()
 	fmt.Printf("Return values, '%d' and '%s' fetched from getThree() function invocation.", threeInt, threeString)
 }

@@ -7,16 +7,16 @@ func ping(_ping chan<- string, message string) { // ping is a receive-only chann
 }
 
 func pong(_ping <-chan string, _pong chan<- string) { // pong is a send-only channel
-	var message = <-_ping
+	message := <-_ping
 	_pong <- message
 }
 
 func channelDirections() {
-	var message = "hello world!"
-	var pingChannel = make(chan string, 1)
+	message := "hello world!"
+	pingChannel := make(chan string, 1)
 	ping(pingChannel, message)
 
-	var pongChannel = make(chan string, 1)
+	pongChannel := make(chan string, 1)
 	pong(pingChannel, pongChannel)
 
 	fmt.Println(<-pongChannel)

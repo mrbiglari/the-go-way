@@ -17,7 +17,7 @@ type speaker interface { // 4. defining an interface type
 type function func(int, int) int // 5. defining a function type
 
 func types() {
-	var movie = movie{name: "The Matrix"}
+	movie := movie{name: "The Matrix"}
 	fmt.Println(movie)
 
 	var age age = 25 // not interchangeable with the original type int
@@ -32,6 +32,6 @@ func types() {
 	}
 
 	var add function = func(a, b int) int { return a + b }
-	var sum = add(5, 3)
+	sum := add(5, 3)
 	fmt.Println(sum)
 }

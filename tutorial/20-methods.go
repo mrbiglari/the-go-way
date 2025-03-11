@@ -26,11 +26,11 @@ func (v rectangle) updateValueState(width, height int) {
 }
 
 func methods() {
-	var rectangleValue = rectangle{width: 5, height: 3}
+	rectangleValue := rectangle{width: 5, height: 3}
 	fmt.Println("area:", rectangleValue.area())
 	fmt.Println("perimeter:", rectangleValue.perimeter())
 
-	var rectanglePointer = &rectangleValue
+	rectanglePointer := &rectangleValue
 	fmt.Println("area:", rectanglePointer.area())
 	fmt.Println("perimeter:", rectanglePointer.perimeter())
 

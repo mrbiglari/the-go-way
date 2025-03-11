@@ -22,7 +22,7 @@ func increment(argument int) (int, error) {
 }
 
 func customErrors() {
-	var _, _error = increment(69)
+	_, _error := increment(69)
 	var _customError *customError
 
 	if errors.As(_error, &_customError) {
