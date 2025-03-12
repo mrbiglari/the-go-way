@@ -76,6 +76,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [text templates](tutorial/55-text-templates.go/)
 1. ✅ [regular expressions](tutorial/56-regular-expressions.go/)
 1. ✅ [json](tutorial/57-json.go/)
+1. ✅ [xml](tutorial/58-xml.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
