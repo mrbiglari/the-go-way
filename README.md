@@ -78,6 +78,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [json](tutorial/57-json.go/)
 1. ✅ [xml](tutorial/58-xml.go/)
 1. ✅ [time](tutorial/59-time.go/)
+1. ✅ [time formatting](tutorial/60-time-formatting.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
