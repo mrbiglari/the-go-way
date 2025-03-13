@@ -13,6 +13,7 @@ func timeFormatting() {
 	time2, _ := time.Parse(time.RFC3339, "2012-11-01T22:08:41+00:00")
 	print(time2)
 	/*
+		Go's time formatting uses the reference date:
 		Mon Jan 2 15:04:05 MST 2006
 		1   2  3  4  5    6
 	*/
