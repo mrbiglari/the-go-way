@@ -82,6 +82,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [time formatting](tutorial/61-time-formatting.go/)
 1. ✅ [random numbers](tutorial/62-random-numbers.go/)
 1. ✅ [number parsing](tutorial/63-number-parsing.go/)
+1. ✅ [url parsing](tutorial/64-url-parsing.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
