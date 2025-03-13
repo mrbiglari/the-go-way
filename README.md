@@ -80,6 +80,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [time](tutorial/59-time.go/)
 1. ✅ [epoch](tutorial/60-epoch.go/)
 1. ✅ [time formatting](tutorial/61-time-formatting.go/)
+1. ✅ [random numbers](tutorial/62-random-numbers.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
