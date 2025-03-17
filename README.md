@@ -88,6 +88,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [reading files](tutorial/67-reading-files.go/)
 1. ✅ [writing files](tutorial/68-writing-files.go/)
 1. ✅ [line filters](tutorial/69-line-filters.go/)
+1. ✅ [file paths](tutorial/70-file-paths.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
