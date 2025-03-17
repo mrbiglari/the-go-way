@@ -83,7 +83,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [random numbers](tutorial/62-random-numbers.go/)
 1. ✅ [number parsing](tutorial/63-number-parsing.go/)
 1. ✅ [url parsing](tutorial/64-url-parsing.go/)
-1. ✅ [base64 encoding](tutorial/65-base64-encoding.go/)
+1. ✅ [base64 encoding](tutorial/66-base64-encoding.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
