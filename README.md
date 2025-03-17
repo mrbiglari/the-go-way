@@ -85,6 +85,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [url parsing](tutorial/64-url-parsing.go/)
 1. ✅ [sha256 hashes](tutorial/65-sha256-hashes.go/)
 1. ✅ [base64 encoding](tutorial/66-base64-encoding.go/)
+1. ✅ [reading files](tutorial/67-reading-files.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
