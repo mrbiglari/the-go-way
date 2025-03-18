@@ -92,6 +92,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [directories](tutorial/71-directories.go/)
 1. ✅ [temporary files and directories](tutorial/72-temporary-files-and-directories.go/)
 1. ✅ [embed directive](tutorial/73-embed-directive.go/)
+1. ✅ [testing and benchmarking](tutorial/74-testing-and-benchmarking_test.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
