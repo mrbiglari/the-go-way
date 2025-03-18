@@ -90,6 +90,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [line filters](tutorial/69-line-filters.go/)
 1. ✅ [file paths](tutorial/70-file-paths.go/)
 1. ✅ [directories](tutorial/71-directories.go/)
+1. ✅ [temporary files and directories](tutorial/72-temporary-files-and-directories.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
