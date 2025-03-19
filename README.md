@@ -94,6 +94,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [embed directive](tutorial/73-embed-directive.go/)
 1. ✅ [testing and benchmarking](tutorial/74-testing-and-benchmarking_test.go/)
 1. ✅ [command-line arguments](tutorial/75-command-line-arguments.go/)
+1. ✅ [command-line flags](tutorial/76-command-line-flags.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
