@@ -96,6 +96,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [command-line arguments](tutorial/75-command-line-arguments.go/)
 1. ✅ [command-line flags](tutorial/76-command-line-flags.go/)
 1. ✅ [command-line subcommands](tutorial/77-command-line-subcommands.go/)
+1. ✅ [environment variables](tutorial/78-environment-variables.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
