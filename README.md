@@ -98,6 +98,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [command-line subcommands](tutorial/77-command-line-subcommands.go/)
 1. ✅ [environment variables](tutorial/78-environment-variables.go/)
 1. ✅ [logging](tutorial/79-logging.go/)
+1. ✅ [http client](tutorial/80-http-client.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
