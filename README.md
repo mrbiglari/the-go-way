@@ -4,7 +4,7 @@
 
 This repository serves as an **archive and audit trail** of my journey learning Go, following the examples provided on [Go by Example](https://gobyexample.com/). Each section contains code snippets, notes, and explanations to reinforce my understanding of Go’s features and best practices.
 
-## Project Structure 🌳
+## Repo Structure 🌳
 
 ```
 the-go-way/
