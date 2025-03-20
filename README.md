@@ -103,6 +103,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [context](tutorial/82-context.go/)
 1. ✅ [spawning processes](tutorial/83-spawning-processes.go/)
 1. ✅ [execing processes](tutorial/84-exec-processes.go/)
+1. ✅ [signals](tutorial/85-signals.go/)
 1. 🔄 [More to Come]
 
 _(The list will be updated as I progress.)_
