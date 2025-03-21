@@ -105,6 +105,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [execing processes](tutorial/84-exec-processes.go/)
 1. ✅ [signals](tutorial/85-signals.go/)
 1. ✅ [exit](tutorial/86-exit.go/)
+1. ✅ [echo: http server](tutorial/87-echo-http-server.go/)
 
 <!--
 🔄 [More to Come]
