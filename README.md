@@ -109,6 +109,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [echo: http server](tutorial/87-echo-http-server.go/)
 1. ✅ [testify: asserts](tutorial/88-testify-asserts_test.go/)
 1. ✅ [testify: mocks](tutorial/89-testify-mocks_test.go/)
+1. ✅ [interface assertion](tutorial/90-interface-assertion.go/)
 
 <!--
 🔄 [More to Come]
