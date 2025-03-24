@@ -8,6 +8,7 @@ This repository serves as an **archive and audit trail** of my journey learning 
 
 ```
 the-go-way/
+├── notes/                    # The directory hosting notes on go concepts
 ├── tutorial/                 # The directory hosting basic go examples
 │   ├── 1-hello-world.go
 │   │...
@@ -15,7 +16,7 @@ the-go-way/
 ├── README.md                 # A brief summary of the concept covered
 ```
 
-## Learning Progress 📈
+## Topics 📈
 
 Below is a list of the concepts I have covered so far, with links to my implementations:
 
@@ -112,6 +113,12 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 🔄 [More to Come]
 _(The list will be updated as I progress.)_
 -->
+
+## Notes 📒
+
+The following is a compilation of notes covering key Go programming concepts, common challenges, comparisons with object-oriented languages such as Java and C#, and critical perspectives on the language itself. This collection is intended as a resource for developers transitioning from traditional OOP languages to Go, as well as for those learning Go as their first language who seek a deeper understanding of its design principles and best practices.
+
+1. ✅ [interfaces](notes/Interfaces.md/)
 
 ## Why This Repo? 🤔
 
