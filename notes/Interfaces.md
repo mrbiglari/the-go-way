@@ -1,17 +1,17 @@
-### Interfaces in Go
+## Interfaces in Go
 
 In the Go programming language, interfaces define _behaviour_ rather than structure. An interface specifies a set of method signatures that a type must implement, while leaving the details of implementation unspecified. This characteristic makes interfaces a fundamental tool for enabling _abstraction_.
 
 An interface represents an abstract concept of what a type is capable of doing, not how it performs those actions. The interface itself expresses capabilities, while the implementation remains the responsibility of the concrete type.
 
-#### Key Concepts
+### Key Concepts
 
 - A type satisfies an interface _implicitly_ by implementing the required methods; no explicit declaration is necessary.
 - Interfaces enable polymorphism in Go without relying on inheritance.
 - Multiple interfaces can be composed into a new interface via interface embedding (e.g., a `ReadWriter` may embed both `Reader` and `Writer`).
 - Interfaces promote design that depends on behaviour rather than specific concrete types.
 
-#### Example
+### Example
 
 ```go
 type Printer interface {
@@ -31,7 +31,9 @@ func usePrinter(p Printer) {
 
 In this example, `Printer` functions as an abstraction: it defines _what_ must be done (`Print()`), but not _how_. The type `MyPrinter` provides a concrete implementation of this interface.
 
-> ⚠️ _Warning:_ In Go, interface satisfaction is implicit, which introduces both advantages and trade-offs. This feature is central to Go's design philosophy, but also requires careful handling to avoid unintended issues.
+## ⚠️ Implicit Implementation of Interfaces
+
+In Go, interface satisfaction is implicit, which introduces both advantages and trade-offs. This feature is central to Go's design philosophy, but also requires careful handling to avoid unintended issues.
 
 ### Benefits of Implicit Interfaces
 
@@ -80,8 +82,6 @@ missing method GetUser
 ```
 
 This mechanism ensures that implementations remain aligned with interface definitions over time.
-
----
 
 ### Interface Satisfaction Assertions: Full Example
 
@@ -174,13 +174,11 @@ These compile-time assertions provide several benefits:
 - They help ensure that mock implementations used in testing remain valid.
 - They serve as inline documentation indicating intentional design decisions.
 
----
-
-### Design Philosophy and Language Stability
+## Design Philosophy
 
 The Go programming language is unlikely to introduce changes to the implicit interface satisfaction mechanism. This feature is foundational to Go's design principles, including minimalism, explicit composition, and long-term compatibility. The language designers (especially Rob Pike and Russ Cox) have publicly acknowledged both the strengths and limitations of this model but maintain that its advantages outweigh the drawbacks.
 
-### Original Motivations for Implicit Interfaces
+### Original Motivations
 
 | Objective                            | Outcome                                       |
 | ------------------------------------ | --------------------------------------------- |
@@ -220,7 +218,7 @@ A number of ongoing and community-driven efforts aim to improve the experience o
 - Inconsistent or unreliable tooling support.
 - Reduced clarity regarding which types implement which interfaces.
 
-### Summary
+## Summary
 
 In Go, an interface defines a set of method signatures that a type must implement, specifying behaviour rather than implementation. It serves as an abstraction mechanism that enables the development of modular, loosely coupled systems. By focusing on what a type can do, rather than how it does it, interfaces support the decoupling of program modules and promote separation of concerns. This abstraction enhances reusability, as multiple concrete types can satisfy the same interface and be substituted freely. It also enables swappability, allowing one implementation to be replaced with another—whether for improved performance, different behaviour, or testing purposes—without requiring changes to the dependent code. Furthermore, interfaces support uniform treatment of diverse types through upcasting, allowing different concrete implementations to be collected in the same data structure (e.g. a slice of interface values) and operated on generically via shared behaviour.
 
