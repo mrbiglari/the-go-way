@@ -47,6 +47,10 @@ func structs() {
 	trevor := &person{name: "Trevor", age: 22}
 	fmt.Println(trevor)
 
+	rob := new(person) // Similar to `&person{}` The `new(person)` function allocates memory for a variable of a given type and returns a pointer to it. While this type of initialisation is possible, most idiomatic Go code prefers composite literals over the use of `new`.
+	rob.name = "Rob"
+	fmt.Println(rob)
+
 	amanda := newPerson("Amanda")
 	fmt.Println(amanda)
 
