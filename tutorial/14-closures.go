@@ -21,7 +21,7 @@ func closures() {
 		fmt.Println("...incrementing, counter value is now:", incrementFunc())
 	}
 
-	fmt.Println("\nLet's start over!\n")
+	fmt.Println("Let's start over!")
 
 	anotherIncrementFunc := getCounterIncrementFunc() // Each closure in Go retains access to variables from its outer scope, encapsulating them within its execution context.
 	fmt.Println("Initial counter value is:", 0)
