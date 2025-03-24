@@ -51,6 +51,13 @@ func structs() {
 	rob.name = "Rob"
 	fmt.Println(rob)
 
+	zob := (*person)(nil)
+	zob = rob
+	fmt.Println(zob)
+
+	var hob *person = rob
+	fmt.Println(hob)
+
 	amanda := newPerson("Amanda")
 	fmt.Println(amanda)
 
