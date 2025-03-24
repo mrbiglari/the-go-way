@@ -121,6 +121,8 @@ The following is a compilation of notes covering key Go programming concepts, co
 
 1. ✅ [interfaces](notes/Interfaces.md/)
 1. ✅ [unit testing](notes/Testing.md/)
+1. ✅ [structs](notes/Structs.md/)⌛
+1. ✅ [channels](notes/Channels.md/)⌛
 
 ## Why This Repo? 🤔
 
