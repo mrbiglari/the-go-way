@@ -120,6 +120,7 @@ _(The list will be updated as I progress.)_
 The following is a compilation of notes covering key Go programming concepts, common challenges, comparisons with object-oriented languages such as Java and C#, and critical perspectives on the language itself. This collection is intended as a resource for developers transitioning from traditional OOP languages to Go, as well as for those learning Go as their first language who seek a deeper understanding of its design principles and best practices.
 
 1. ✅ [interfaces](notes/Interfaces.md/)
+1. ✅ [unit testing](notes/Testing.md/)
 
 ## Why This Repo? 🤔
 
