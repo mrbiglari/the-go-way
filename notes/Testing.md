@@ -163,6 +163,92 @@ func TestMakesHappyIfHungry(t *testing.T) {
 }
 ```
 
+<details>
+<summary>⭕ Critique of Go </summary>
+Unlike mocking frameworks in Java or C#, mocking in Go requires passing method names as *strings* when setting up expectations and assertions.
+
+### Setting Expectations with testify/mock
+
+In `testify`, expectations are declared by calling `On(...)` with the method name as a string, followed by the expected arguments:
+
+```go
+mockCharacter.On("SetState", Happy).Return()
+```
+
+Assertions on method calls are made in a similar way:
+
+```go
+mockCharacter.AssertCalled(t, "SetState", Happy)
+```
+
+This string-based approach introduces a potential _maintenance risk_: method names are not validated by the compiler. If the method name changes in the interface but not in the test, the test will not fail at compile time. Instead, it may panic at runtime or silently produce incorrect results.
+
+### Why Go Mocks Use Strings Instead of Method References
+
+Although Go supports reflection, higher-order functions, and function values, it lacks several features that enable more expressive mocking in other languages. Go does not provide a way to extract the method name from a function value, nor does it support automatic discovery of method invocations at runtime. Let’s say we write:
+
+```go
+fn := myStruct.SetState
+```
+
+Now we have a function that takes a `State`. But Go has no way to say:
+
+> "This function is the `SetState` method on `*MyStruct`"
+
+There's no metadata attached to `fn` — it’s just a behaviour.
+
+### Language Limitations That Impact Mocking in Go
+
+| Limitation                    | Description                                                            |
+| ----------------------------- | ---------------------------------------------------------------------- |
+| No expression trees           | Go cannot introspect lambdas or function bodies to detect method calls |
+| No runtime proxies            | Go lacks a mechanism to dynamically wrap interfaces at runtime         |
+| Function values lose identity | Passing a method as a function does not preserve its name or receiver  |
+| No annotations or metadata    | There is no way to tag or inspect method semantics as metadata         |
+
+### How This Differs from Java and C#
+
+#### Java (Mockery)
+
+In Java, mocking frameworks like Mockery and Mockito allow developers to define expectations using method calls directly:
+
+```java
+context.checking(new Expectations() {{
+    oneOf(mockedObject).setState(HAPPY);
+}});
+```
+
+These frameworks use bytecode instrumentation and runtime reflection to record the method being invoked and verify it later. There is no need to pass method names as strings. The mocking framework automatically extracts method names, arguments, and types during execution, resulting in more maintainable and type-safe test code.
+
+#### C# (Moq)
+
+In C#, the Moq library supports expression-based mocking:
+
+```csharp
+mock.Setup(m => m.SetState(Happy));
+mock.Verify(m => m.SetState(Happy), Times.Once);
+```
+
+In this case, `m => m.SetState(Happy)` is not just a function. It is an expression that the framework can inspect to extract the method name and parameters. This enables compile-time validation and reduces the risk of incorrect test definitions.
+
+### Why Go Follows a Different Philosophy
+
+Go was designed with a preference for simplicity, clarity, and explicit behaviour. It avoids advanced metaprogramming features such as runtime proxies, expression trees, and annotations. These design choices limit the flexibility of mocking libraries but result in more predictable and readable code.
+
+As a result, mocking in Go with `testify/mock` is more manual:
+
+- The developer must write mock implementations explicitly
+- Method names must be passed as strings
+- Expectations are not validated at compile time
+
+While this approach is less automated, it aligns with Go's philosophy of transparency and minimalism.
+
+---
+
+---
+
+</details>
+
 ### Mock Flexibility and Limitations
 
 Unlike some object-oriented mocking frameworks (e.g., Mockito for Java), `testify/mock` is **strict by default**. Any method called during a test must have a corresponding `.On(...).Return(...)` definition. Failure to do so results in a runtime panic.
