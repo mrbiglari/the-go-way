@@ -110,6 +110,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [testify: asserts](tutorial/88-testify-asserts_test.go/)
 1. ✅ [testify: mocks](tutorial/89-testify-mocks_test.go/)
 1. ✅ [interface assertion](tutorial/90-interface-assertion.go/)
+1. ✅ [variable assignments](tutorial/91-variable-assignments.go/)
 
 <!--
 🔄 [More to Come]
