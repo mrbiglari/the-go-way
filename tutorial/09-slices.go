@@ -6,6 +6,10 @@ import (
 )
 
 func _slices() {
+	array := [3]int{1, 2, 3}
+	slicedArray := array[:] // create a slice from an array
+	fmt.Println(slicedArray)
+
 	var s []string
 	fmt.Println("uninit:", s, s == nil, len(s) == 0)
 
