@@ -112,6 +112,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [interface assertion](tutorial/90-interface-assertion.go/)
 1. ✅ [variable assignment](tutorial/91-variable-assignment.go/)
 1. ✅ [type conversion](tutorial/92-type-conversion.go/)
+1. ✅ [type assertion](tutorial/93-type-assertion.go/)
 
 <!--
 🔄 [More to Come]
