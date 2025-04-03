@@ -22,7 +22,7 @@ func bye(writer http.ResponseWriter, request *http.Request) {
 	}
 
 }
-func context() {
+func _context() {
 	http.HandleFunc("/bye", bye)
 	http.ListenAndServe(":8090", nil)
 }
