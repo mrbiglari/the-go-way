@@ -115,6 +115,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [type assertion](tutorial/93-type-assertion.go/)
 1. ✅ [user-defined types](tutorial/94-user-defined-types.go/)
 1. ✅ [gorm](tutorial/95-gorm.go/)
+1. ✅ [sqs: read messages](tutorial/96-sqs.go/)
 
 <!--
 🔄 [More to Come]
