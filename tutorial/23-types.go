@@ -16,7 +16,7 @@ type speaker interface { // 4. user-defined interface type
 
 type function func(int, int) int // 5. user-defined function type
 
-func types() {
+func _types() {
 	movie := movie{name: "The Matrix"}
 	fmt.Println(movie)
 
