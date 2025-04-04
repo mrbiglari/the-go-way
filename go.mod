@@ -5,6 +5,7 @@ go 1.23.5
 require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.65
 	github.com/aws/aws-sdk-go-v2/service/sns v1.34.3
+	github.com/robfig/cron v1.2.0
 )
 
 require (
