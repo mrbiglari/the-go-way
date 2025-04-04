@@ -119,6 +119,7 @@ Below is a list of the concepts I have covered so far, with links to my implemen
 1. ✅ [sns: publish messages](tutorial/97-sns.go/)
 1. ✅ [pubsub: receive messages](tutorial/98-pubsub-receive.go/)
 1. ✅ [pubsub: publish messages](tutorial/99-pubsub-publish.go/)
+1. ✅ [cron](tutorial/100-cron.go/)
 
 <!--
 🔄 [More to Come]
